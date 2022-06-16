@@ -9,7 +9,7 @@ $config{'ConfirmationMode'} = 0;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto,'support@synck.com';
+push @mailto,'yosizuka1@gmail.com';
 
 ## 管理者宛メールのCC・BCCの宛先
 #$config{'admin_cc'} = 'support@synck.com';
@@ -20,7 +20,7 @@ push @mailto,'support@synck.com';
 #$config{'responder_bcc'} = 'support@synck.com';
 
 ## 自動返信メールの差出人名
-$config{'fromname'} = 'シンクグラフィカ';
+$config{'fromname'} = 'テストベーコン';
 
 ## 自動返信メールの差出人メールアドレス
 $config{'mailfrom'} = $mailto[0];
