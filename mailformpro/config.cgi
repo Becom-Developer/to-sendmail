@@ -159,7 +159,7 @@ $config{'DisabledJs'} = 0;
 #$config{'PostDomain'} = $ENV{'HTTP_HOST'};
 
 ## 全文英語のスパム候補を除外(1:除外 / 0:除外しない)
-$config{'EnglishSpamBlock'} = 1;
+$config{'EnglishSpamBlock'} = 0;
 
 ## リンク系スパム候補を除外(1:除外 / 0:除外しない)
 $config{'LinkSpamBlock'} = 1;
