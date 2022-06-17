@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=320,initial-scale=1.0,user-scalable=no"
+    />
+    <title>Mailform Pro</title>
+    <!--メールフォームプロ用CSS-->
+    <link rel="stylesheet" href="mfp.statics/mailformpro.css" type="text/css" />
+    <!--/メールフォームプロ用CSS-->
+    <link rel="stylesheet" href="mfp.statics/example.css" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Mailform Pro</h1>
+        <p>もっともっと究極の進化を遂げたメールフォームプロの登場です。</p>
+      </div>
+
+      <div id="container">
+        <!-- <script type="text/javascript" src="examples/example.js"></script> -->
+        <!--メールフォームプロ-->
+        <form
+          id="mailformpro"
+          action="mailformpro/mailformpro.cgi"
+          method="POST"
+        >
+          <table>
+            <tr>
+              <th>お名前<span class="must">必須</span>：</th>
+              <td>
+                <input type="text" name="名前" required="required" size="35" />
+              </td>
+            </tr>
+
+            <tr>
+              <th>会社名<span class="must">必須</span>：</th>
+              <td>
+                <input
+                  type="text"
+                  name="会社名"
+                  required="required"
+                  size="35"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th>電話番号<span class="must">必須</span>：</th>
+              <td>
+                <input
+                  type="text"
+                  name="電話番号"
+                  required="required"
+                  size="35"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th>メールアドレス<span class="must">必須</span>：</th>
+              <td>
+                <input
+                  type="email"
+                  data-type="email"
+                  data-parent="mailfield"
+                  name="email"
+                  size="35"
+                  required="required"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th>郵便番号：</th>
+              <td><input type="text" name="郵便番号" size="35" /></td>
+            </tr>
+
+            <tr>
+              <th>送付先住所：</th>
+              <td><input type="text" name="送付先住所" size="35" /></td>
+            </tr>
+
+            <tr>
+              <th>オフィス改装の予定：</th>
+              <td class="radiobtn">
+                <span
+                  ><input
+                    name="オフィス改装の予定"
+                    type="radio"
+                    value="予定がある"
+                  />予定がある　</span
+                >
+                <span
+                  ><input
+                    name="オフィス改装の予定"
+                    type="radio"
+                    value="検討中"
+                  />検討中　</span
+                >
+                <span
+                  ><input
+                    name="オフィス改装の予定"
+                    type="radio"
+                    value="予定はない"
+                  />予定はない</span
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th>お問い合わせ内容<span class="must">必須</span>：</th>
+              <td>
+                <textarea
+                  name="お問い合わせ内容"
+                  cols="20"
+                  rows="20"
+                  placeholder="お問い合わせ内容をご記入ください。&#13;・時期&#13;・規模（㎡、坪）&#13;・人数&#13;・部屋数（執務室、受付、会議室、倉庫etc...）"
+                  required="required"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+
+          <input type="submit" value="送信する" />
+          <button type="submit">送信する</button>
+
+
+        <!-- </form>
+        <script
+          type="text/javascript"
+          id="mfpjs"
+          src="mailformpro/mailformpro.cgi"
+          charset="UTF-8"
+        ></script> -->
+
+        <!--/メールフォームプロ-->
+      </div>
+      <div id="footer">
+        <p>Copyright &copy; 2004 SYNCKGRAPHICA.All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
