@@ -151,7 +151,7 @@ $config{'mfp_separator_2'} = "\n【お問い合わせ内容】\n";
 ####################################################
 
 ## Javascriptが無効の場合は送信を許可しない(1:許可しない / 0:許可する)
-$config{'DisabledJs'} = 1;
+$config{'DisabledJs'} = 0;
 
 ## リファラードメインチェック / 有効にする場合は行頭の#を削除
 #$config{'PostDomain'} = $ENV{'HTTP_HOST'};
