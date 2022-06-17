@@ -9,7 +9,7 @@ $config{'ConfirmationMode'} = 0;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto,'yosizuka1@gmail.com';
+push @mailto,'support@synck.com';
 
 ## 管理者宛メールのCC・BCCの宛先
 #$config{'admin_cc'} = 'support@synck.com';
@@ -20,7 +20,7 @@ push @mailto,'yosizuka1@gmail.com';
 #$config{'responder_bcc'} = 'support@synck.com';
 
 ## 自動返信メールの差出人名
-$config{'fromname'} = 'ベーコン';
+$config{'fromname'} = 'シンクグラフィカ';
 
 ## 自動返信メールの差出人メールアドレス
 $config{'mailfrom'} = $mailto[0];
@@ -43,7 +43,7 @@ $config{'SerialFormat'} = '<date>%04d';
 $config{'SerialBoost'} = 0;
 
 ## サンクスページのURL(URLかsend.cgiから見た相対パス)
-$config{'ThanksPage'} = '../testformthanks.html?no=%s';
+$config{'ThanksPage'} = '../thanks.html?no=%s';
 
 ## 設置者に届くメールの件名
 $config{'subject'} = '[ %s ] お問い合せフォームから';
