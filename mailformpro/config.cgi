@@ -9,7 +9,7 @@ $config{'ConfirmationMode'} = 0;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto,'yosizuka1@gmail.com';
+push @mailto,'postmaster@becom2022.sakura.ne.jp';
 
 ## 管理者宛メールのCC・BCCの宛先
 #$config{'admin_cc'} = 'support@synck.com';
